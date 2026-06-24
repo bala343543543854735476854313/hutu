@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>訂位預約 Contact - HUTU Bistro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">壺途</a>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <nav class="nav-overlay">
+    <ul class="nav-links">
+      <li><a href="index.html">首頁 Home</a></li>
+      <li><a href="about.html">關於壺途 About</a></li>
+      <li><a href="menu.html">酒菜單 Menu</a></li>
+      <li><a href="solar-terms.html">節氣特調 Seasonal Specials</a></li>
+      <li><a href="contact.html">訂位預約 Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <div class="page-title-en">Reservation</div>
+      <h1 class="page-title">來店入座</h1>
+    </div>
+    
+    <div class="page-content" style="display: flex; gap: 6rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+      
+      <div style="flex: 1; min-width: 300px;">
+        <h2 style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 2rem;">營業資訊</h2>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0.5rem;">地點 Address</h4>
+          <p style="color: var(--text-secondary); line-height: 1.6;">台中市西區公益里公正路196號</p>
+        </div>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4 style="font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0.5rem;">時間 Hours</h4>
+          <p style="color: var(--text-secondary); line-height: 1.6;">週三至週一 18:00-05:00<br>每週二公休</p>
+        </div>
+        
+        <div>
+          <h4 style="font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0.5rem;">聯絡 Contact</h4>
+          <p style="color: var(--text-secondary); line-height: 1.6;">0986624110</p>
+        </div>
+      </div>
+
+      <div style="flex: 1.5; min-width: 300px; background: var(--bg-secondary); padding: 4rem; border: 1px solid rgba(194, 155, 87, 0.2);">
+        <h2 style="font-size: 1.5rem; margin-bottom: 2rem; letter-spacing: 2px;">線上訂位</h2>
+        <form action="#" method="POST">
+          <div style="display: flex; gap: 2rem; margin-bottom: 1rem;">
+            <div class="form-group" style="flex: 1;">
+              <label for="name">姓名 Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group" style="flex: 1;">
+              <label for="phone">電話 Phone</label>
+              <input type="tel" id="phone" class="form-control" required>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 2rem; margin-bottom: 1rem;">
+            <div class="form-group" style="flex: 1;">
+              <label for="date">日期 Date</label>
+              <input type="date" id="date" class="form-control" required>
+            </div>
+            <div class="form-group" style="flex: 1;">
+              <label for="people">人數 Guests</label>
+              <select id="people" class="form-control" required>
+                <option value="1">1 人</option>
+                <option value="2" selected>2 人</option>
+                <option value="3">3 人</option>
+                <option value="4">4 人</option>
+                <option value="5">5 人以上</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group" style="margin-bottom: 3rem;">
+            <label for="message">特殊需求 Notes</label>
+            <input type="text" id="message" class="form-control">
+          </div>
+          
+          <button type="submit" class="btn">確認預約</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
